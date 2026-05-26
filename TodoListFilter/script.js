@@ -21,13 +21,13 @@ const month = [
   "Dec",
 ];
 const week = [
+  "Sunday",
   "Monday",
   "Tuesday",
   "Wednesday",
   "Thursday",
   "Friday",
   "Saturday",
-  "Sunday",
 ];
 
 function showdate() {
@@ -193,6 +193,6 @@ function saveTasks(tasks) {
 
 // reads tasks from localStorage
 function loadTasks() {
-  taskStorageObj = JSON.parse(localStorage.getItem("todoTasks"));
+  taskStorageObj = JSON.parse(localStorage.getItem("todoTasks")) || [];
   renderList(taskStorageObj);
 }
