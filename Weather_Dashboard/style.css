@@ -8,8 +8,8 @@
 }
 
 :root {
-  --primary-color: #1c1727;
-  --secondary-color: #2b2f35;
+  --primary-color: #6735dc;
+  --secondary-color: #8eaad5;
 }
 body {
   background: linear-gradient(
@@ -33,9 +33,15 @@ body {
   max-height: 100vh;
   /* width: 400px; */
   width: 700px;
-  background-color: #3f4142;
+  background-color: var(--primary-color);
   padding: 10px 20px;
   border-radius: 20px;
+}
+header {
+  display: grid;
+  place-items: center;
+  color: #fff;
+  margin-bottom: 20px;
 }
 .userInput {
   display: flex;
@@ -45,6 +51,7 @@ body {
   width: 100%;
 }
 .inputCityName {
+  flex: 1;
   padding: 5px 10px;
   /* padding-left: 0px; */
   width: 200px;
@@ -108,7 +115,7 @@ button {
   height: 30px;
 }
 .forecastDay {
-  background-color: #3b3e3d;
+  background-color: #8069b9;
   color: #fff;
   display: grid;
   place-items: center;
@@ -119,7 +126,7 @@ button {
   transition: all 0.2 ease;
 }
 .forecastDay:hover {
-  background: linear-gradient(135deg, #969292, #3a3939);
+  background: linear-gradient(135deg, #8a8ff9, #444049);
   transform: translateY(5px);
 }
 .day {
