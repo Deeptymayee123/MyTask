@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="userInput">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="inputWithError">
+          <input type="text" class="inputCityName" />
+          <div class="error"></div>
+        </div>
+        <button id="location">
+          <i class="fa-solid fa-location-crosshairs"></i>
+        </button>
+      </div>
+
+      <h2 id="currentDay"></h2>
+      <div class="content">
+        <div class="fetchAPIWeatherIcon"></div>
+        <div class="weatherContent">
+          <div class="temp"></div>
+          <div class="humidity"></div>
+          <div class="windSpeed"></div>
+        </div>
+      </div>
+
+      <div class="fiveDaysForecastWeather">
+        <!-- <div class="forecastDay">
+          <i class="fa-regular fa-sun"></i>
+          <h4 class="day"></h4>
+          <p class="tempOfDay"></p>
+        </div> -->
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ae8dfe5513.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
