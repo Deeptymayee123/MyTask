@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container hidden" id="form">
+      <h2>Expense tracker</h2>
+
+      <form action="#">
+        <div class="userDetails">
+          <div class="details">
+            <label for="name">Name</label>
+            <input type="text" id="name" />
+            <p class="errorMsg" id="nameError"></p>
+          </div>
+          <div class="details">
+            <label for="itemPrice">Price</label>
+            <input type="text" id="itemPrice" />
+            <p class="errorMsg" id="price"></p>
+          </div>
+          <div class="details">
+            <label for="category">Category</label>
+            <input type="text" id="category" />
+            <p class="errorMsg" id="catError"></p>
+          </div>
+          <div class="details">
+            <label for="inputDate">Date</label>
+            <input type="date" id="inputDate" />
+            <p class="errorMsg" id="dateError"></p>
+          </div>
+          <button class="details" id="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div class="container" id="result">
+      <h2>Expense Tracker</h2>
+      <!-- Total Spent -->
+      <div class="header-section">
+        <div class="totalSpentContainer">
+          <i class="fa-solid fa-dollar-sign"></i>
+          <label for="totalSpent">Total Spent</label>
+          <p id="totalSpent">$0.00</p>
+        </div>
+        <!-- Total Spent per category -->
+        <div class="totalSpentPerCategoryContainer">
+          <i class="fa-solid fa-dollar-sign"></i>
+          <label for="totalSpentPerCategory">Total Spent per Category</label>
+          <p id="totalSpentPerCategory">$0.00</p>
+        </div>
+        <!-- progress bar -->
+        <div class="progressDoughnut">
+          <div class="chart-div">
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+      </div>
+      <!-- Add and filter -->
+      <div class="controls-section">
+        <!-- Add expenses -->
+        <button class="add">
+          <i class="fa-solid fa-plus"></i>
+          <label for="add">Add</label>
+        </button>
+        <div class="catgry">
+          <label for="category">Category</label>
+          <select class="category">
+            <option value="Select All">Select All</option>
+          </select>
+        </div>
+        <div class="dateContainer">
+          <label for="month">Select a Month</label>
+          <input type="month" id="month" />
+        </div>
+        <!-- filter of date and category -->
+        <div class="filters">
+          <div class="filter" id="date"></div>
+          <div class="filter" id="category"></div>
+        </div>
+      </div>
+      <!-- div contains expense details -->
+      <div class="expenseContainer">
+        <ul class="itemList">
+          <!-- <li class="item">
+            <div class="input">
+              <input type="checkbox" />
+              <span>Buy Milk</span>
+            </div>
+            <div class="productdetails">
+              <p class="amount">$0.00</p>
+              <button class="delete"><i class="fa-solid fa-x"></i></button>
+            </div>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ae8dfe5513.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="./chart.js"></script>
+  </body>
+</html>
+
+<!-- // const ctx = document.getElementById("myChart");
+
+// new Chart(ctx, {
+//   type: "doughnut",
+//   data: {
+//     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+//     datasets: [
+//       {
+//         label: "# of Votes",
+//         data: [12, 19, 3, 5, 2, 3],
+//         borderWidth: 1,
+//       },
+//     ],
+//   },
+// }); -->
