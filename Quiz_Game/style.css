@@ -1,0 +1,127 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+:root {
+  --primary-color: #bd7bb9;
+  --secondary-color: #e4c6c6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 250px;
+  width: 500px;
+  box-shadow: 3px 3px 10px #100f0f;
+  border-radius: 25px;
+  margin: 10px;
+  padding: 10px 20px;
+}
+#quiz-screen {
+  height: 500px;
+  min-width: 900px;
+}
+.score {
+  display: grid;
+  align-items: center;
+  gap: 10px;
+}
+.hidden {
+  display: none;
+}
+#showTimer {
+  font-size: 700;
+}
+h2 {
+  font-size: 25px;
+  font-weight: normal;
+}
+#head {
+  font-size: 30px;
+}
+/* start screen */
+
+button {
+  margin-left: 30px;
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  background-color: #b44a88;
+  color: #fff;
+}
+/* quiz screen */
+.questionAndScore {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 300px;
+}
+
+.timer {
+  display: grid;
+  place-items: center;
+}
+.options {
+  display: grid;
+  place-items: center;
+  gap: 20px;
+}
+.btn {
+  width: 80%;
+  padding: 10px;
+  margin: 5px 10px;
+  background-color: #fdc7d7;
+  border-radius: 10px;
+}
+.btn:hover {
+  background-color: #ef85a5;
+  color: #fff;
+}
+/* .btn:click {
+  background-color: #ef85a5;
+  color: #fff;
+} */
+/* result screen */
+.questionScoreTimer {
+  /* display: grid;
+  place-items: center; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 150px;
+}
+.task {
+  list-style: nonequestionScoreTimer;
+}
+/* result screen */
+.questionScoreTimer {
+  margin: 15px;
+  padding: 15px;
+}
