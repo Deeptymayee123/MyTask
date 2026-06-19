@@ -99,10 +99,10 @@ button {
   background-color: #ef85a5;
   color: #fff;
 }
-/* .btn:click {
-  background-color: #ef85a5;
+.btn:focus {
+  background-color: #90aee6;
   color: #fff;
-} */
+}
 /* result screen */
 .questionScoreTimer {
   /* display: grid;

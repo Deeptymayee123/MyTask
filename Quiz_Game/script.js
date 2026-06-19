@@ -174,10 +174,10 @@ function showBreakDown(responseData) {
 
     const div3 = document.createElement("div");
     div3.classList.add("breakDownTimeTaken");
-    div3.textContent = `${item.time}s`;
+    div3.textContent = `Take: ${item.time}s`;
     const div4 = document.createElement("div");
     div4.classList.add("scoreTotal");
-    div4.textContent = item.Score;
+    div4.textContent = `Score: ${item.Score}`;
     console.log(item.Score);
 
     div1.appendChild(div2);
